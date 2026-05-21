@@ -238,7 +238,6 @@ print(f"Class balance after:  {neg_clean} neg / {pos_clean} pos")
 print(f"Removal ratio neg/pos: "
       f"{(neg_orig-neg_clean)/max((pos_orig-pos_clean),1):.2f}")
 
-# TFIDF Vectorization on clean data
 vectorizer_final = TfidfVectorizer(
     max_features=5000,
     stop_words='english',
